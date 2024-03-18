@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cross.ico" type="image/x-icon">
+    <title>Formato de videos em site</title>
+</head>
+<body>
+    <h1>formatos de video hospedados localmente</h1>
+    <p>Exemplos de formatos de video hospedados localmente  </p>
+    <video src="midia/meu-video1080.Mp4.mp4" width="500" controls></video><!--Forma simples de adicionar video, porém precisa de mais formatos para garantia de funcionamento em todos navegadores.-->
+    <!--Inserindo agora todos os formatos-->
+    <video controls poster="imagens/imagem-praia.jpg" width="560" height="315"> <!--Width = largura e Height = altura--> <!--loop opcional-->
+        <!--tag 'poster' = thumbnail.-->
+        <source src="midia/meu-video1080.Mp4.mp4"type="video/mp4">
+        <source src="midia/meu-video.webm.webm" type="video/webm">
+        <source src="midia/meu-video.ogv.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatiblidade com reprodução de video</p>
+        <!--Dessa forma, irá testar por ordem de lista, primeiro tentando o video1080.mp4, se não funcionar, ele tentará o meuvideo.webm e assim sucessivamente-->
+    </video>
+    <h1>Videos externos(youtube)</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=MiVDCeh_WkvQ2bXT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

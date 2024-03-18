@@ -1,0 +1,36 @@
+@charset "UTF-8 ";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body {
+    background-image: linear-gradient(to right , #d4c2ad, #efdfcc);
+}
+main {
+    background-color: white;
+    
+    width: 600px; /* Largura para a parte branca do texto não precisar ocupar a tela toda */
+    
+    padding: 10px; /* Largura para não ficar muito colada as letras no fim do fundo branco */
+
+    margin: auto; /* Imagem sempre centralizada ao meio independente do tamanho da tela */
+
+    border-radius: 20px; /* Bordas arredondadas */
+
+    box-shadow: 5px 5px 15px #66796b /*Sombras ao redor, primeiro valor indica o quanto para a direita, segundo valor indica o quanto para baixo, e ultimo valor o quanto espalhamento( mais espalhado mais transparencia) */
+}
+h1 {
+    color: #ba8e7a; /* Cor do h1(Titulo) */
+
+    text-align: center; /*Tag para deixar o h1(titulo) centralizado */
+
+    text-shadow: 2px 2px 2px #d4c2ad; /*tag para sombreamento no titulo*/
+}
+h2 {
+    color: #66796b;
+}
+p {
+    text-align: justify;
+    
+}

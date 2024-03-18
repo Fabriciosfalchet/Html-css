@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* EM HTML é id ='' em CSS é #
+   em HTML é class ='' em CSS é . 
+   em HTML é possivel usar apenas um id
+   em HTML podemos usar quantos class que quisermos*/
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(4, 109, 0);
+}
+h1#principal {
+    text-align: center; /*Identificação, se usa # */
+    background-color: burlywood;
+    color: white;
+}
+h2 {
+    color: rgb(73, 109, 71);
+}
+h2.basico {
+    color: blue;
+    background-image: linear-gradient(to left, aqua,aquamarine);
+    font-style: italic;
+    font-size: 1.5em;
+}
+h2.intermediario {
+    color: #EB9910;
+    background-image: linear-gradient(to left, #EBB20C, #EAD96D );
+    font-style: italic;
+    font-size: 1.5em;
+}
+h2.avancado {
+    color: #EB9E78;
+    background-image: linear-gradient(to right,#EB1A26,#EA5B16);
+    font-style: italic;
+    font-size: 1.5em;
+}

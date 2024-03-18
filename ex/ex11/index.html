@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cross.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes, ou aumente e diminua o tamanho da janela de seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <!--Imagens que se adaptam a tela do usuario, Utilizar a tag 'picture' e na identação tag 'img' e colocará na tag img sua imagem de maior tela, acima utilize tag 'source media' e altere de 'min-width' para 'MAX-width' e defina o valor max como 1050px, após isso nas aspas de 'srcset' digite o código de onde a imagem se encontra. Acima dessa acrescente mais uma tag 'source media' com o maximo de 750px-->
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em html5</p>
+    <audio src="midia/musica.mp3"  controls autoplay loop></audio>
+    <!-- tag 'loop' significa recomeçar audio automaticamente, uso da tag opcional-->
+    <!--Essa tag de 'audio' é compativel com formato MP3, WA, OGG-->
+    <!--Outra forma de adicionar audio abaixo-->
+    <p>Nova forma de audio</p>
+    <audio preload="metadata" controls loop> 
+        <source src="midia/musica.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
