@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cross.ico" type="image/x-icon">
+    <title>Imagens de fundo 1</title>
+    <style>
+        div.quadrado {
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+        }
+        div.quadrado#q1 {
+            background-color: skyblue;
+        }
+
+        div.quadrado#q2 {
+            background-image: linear-gradient(to bottom, yellow, rgb(255, 167, 4) );
+        }
+
+        div.quadrado#q3 {
+            background-image: url(Imagensfundo/pattern001.png );
+        }
+        body {
+            background-image: url(Imagensfundo/wallpaper001.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+
+    <div class="quadrado" id="q2">
+
+    </div>
+
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
