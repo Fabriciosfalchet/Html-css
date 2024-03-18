@@ -15,11 +15,19 @@
             background-size: cover; /*Tamanho para ocupar 100% da view port(visão) independente de tamanho e largura*/
             
             /* Background-size contain = Ocupa a imagem sem cortes, mas adaptações com bordas, como filmes ou videos no yt*/
-        }
+            background-attachment: fixed; /*Fixar o fundo, para que mesmo com contéudo grande não fique com bordas*/
+
+
+            /*ShortHand - Background 
+                color > image > position > repeat > [size] > attachment 
+                
+                background: black url(Imagensfundo/wallpaper002.jpg) center center no-repeat cover fixed;
+                        */
+            }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 800px; /*Responsividade no texto*/
             padding: 10px;
             margin: auto;
             border: 3px solid darkblue;
@@ -30,7 +38,11 @@
 <body>
     <main>
         <h1>Teste De Imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod consequuntur dolore illo aspernatur est mollitia voluptate voluptatem sed, voluptates porro accusantium modi iusto reprehenderit ut optio sapiente explicabo consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eius fugiat facere amet dolorem, eos deleniti, minus magnam expedita ipsum ab odit rem nemo adipisci, excepturi cum non laudantium incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto, illo iste quasi quam iure rem nesciunt illum eum sunt libero dolores ea temporibus dolore ipsa officiis! Quam, at vitae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod consequuntur dolore illo aspernatur est mollitia voluptate voluptatem sed, voluptates porro accusantium modi iusto reprehenderit ut optio sapiente explicabo consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eius fugiat facere amet dolorem, eos deleniti, minus magnam expedita ipsum ab odit rem nemo adipisci, excepturi cum non laudantium incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto, illo iste quasi quam iure rem nesciunt illum eum sunt libero dolores ea temporibus dolore ipsa officiis! Quam, at vitae. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod consequuntur dolore illo aspernatur est mollitia voluptate voluptatem sed, voluptates porro accusantium modi iusto reprehenderit ut optio sapiente explicabo consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eius fugiat facere amet dolorem, eos deleniti, minus magnam expedita ipsum ab odit rem nemo adipisci, excepturi cum non laudantium incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto, illo iste quasi quam iure rem nesciunt illum eum sunt libero dolores ea temporibus dolore ipsa officiis! Quam, at vitae. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod consequuntur dolore illo aspernatur est mollitia voluptate voluptatem sed, voluptates porro accusantium modi iusto reprehenderit ut optio sapiente explicabo consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eius fugiat facere amet dolorem, eos deleniti, minus magnam expedita ipsum ab odit rem nemo adipisci, excepturi cum non laudantium incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto, illo iste quasi quam iure rem nesciunt illum eum sunt libero dolores ea temporibus dolore ipsa officiis! Quam, at vitae. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod consequuntur dolore illo aspernatur est mollitia voluptate voluptatem sed, voluptates porro accusantium modi iusto reprehenderit ut optio sapiente explicabo consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eius fugiat facere amet dolorem, eos deleniti, minus magnam expedita ipsum ab odit rem nemo adipisci, excepturi cum non laudantium incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto, illo iste quasi quam iure rem nesciunt illum eum sunt libero dolores ea temporibus dolore ipsa officiis! Quam, at vitae. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod consequuntur dolore illo aspernatur est mollitia voluptate voluptatem sed, voluptates porro accusantium modi iusto reprehenderit ut optio sapiente explicabo consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eius fugiat facere amet dolorem, eos deleniti, minus magnam expedita ipsum ab odit rem nemo adipisci, excepturi cum non laudantium incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto, illo iste quasi quam iure rem nesciunt illum eum sunt libero dolores ea temporibus dolore ipsa officiis! Quam, at vitae. </p>
     </main>
 </body>
 </html>
