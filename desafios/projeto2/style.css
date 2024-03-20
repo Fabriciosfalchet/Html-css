@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    --begeclaro: #EFDFCC;
+    --salmao: #D7A184;
+    --begeescuro: #D4C2AD;
+    --verde: #66796B;
+    --salmaoescuro: #BA8E7A;
+}
+body {
+    background-image: linear-gradient(to bottom, var(--begeescuro), var(--salmao));
+    background-attachment: fixed;
+}
+header {
+    background-color: var(--begeescuro);
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+header >h1 {
+    font-size: 4em;
+    font-variant: small-caps;
+}
+main {
+    background-color: white;
+    min-width: 350px;
+    max-width: 800px;
+    margin: auto;
+}
+
+main > section > p{
+    background-color: #66796b6e;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 3em;
+    
+}
+main > section#img1 {
+    background-image: url();
+    background-size: cover;
+    background-position: bottom center ;
+    background-attachment: fixed;
+    margin-bottom: 30px;
+    
+}
+/*main > section#img2 {
+    background-image: url(imagens/mãe.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    
+}
+
+main > section#img3 {
+    background-image: url(imagens/matheus.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    
+}
+
+main > section#img4 {
+    background-image: url(imagens/guilherme.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    
+}
+main > section#img5 {
+    background-image: url(imagens/alice.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    
+} */
+
