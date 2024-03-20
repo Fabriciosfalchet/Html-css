@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cross.ico" type="image/x-icon">
+    <title>Tabela 2 - 2.0</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        caption {
+            font-size: 1em;
+            font-variant: small-caps;
+            color: white;
+            background-color: black;
+            padding: 10px;
+
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+            
+        }
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead > tr {
+            position: sticky;
+            top: -1px;
+            background-color: darkgray; /*Mesma cor de fundo definida anteriormente para o thead*/
+            
+        }
+        thead,tfoot {
+            background-color: darkgray;
+            color: white;
+        }
+        td.num {
+            text-align: right;
+        }
+        td.total {
+            text-align: center;
+        }
+        tbody > tr:nth-child(2n) /*Pula de 2 em 2 linhas */ {
+            background-color: lightgray;
+        }
+        /*tr:nth-child(odd(impar) even(par))*/
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        CAPTION - LEGENDA TABELA
+        THEAD
+            TR,TD,TH
+        TBODY
+            TR.TD,TH
+        TFOOT
+            TR,TD,TH
+        -->
+    <table> <!--Tabela-->
+        <caption>População das Unidades Federativas</caption>
+        <thead> <!--Cabeça tabela-->
+            <tr>
+                <th scope="col">ESTADO</th> <!--titulo cabeçalho-->
+                <th scope="col">POPULAÇÃO</th> <!--tag TH para 'titulo', cabeçalho e rodapé-->
+            </tr> <!--Linha tabela-->
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44.411.238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.141.626</td>
+            </tr>
+            <tr>
+                <td>
+                    Paraná
+                </td>
+                <td class="num">11.444.380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande Do Sul</td>
+                <td class="num">10.882.965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.058.931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.794.957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.121.025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.810.361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.056.495</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">3.974.687</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">3.974.687</td>
+            </tr>
+        </tbody>
+ 
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> 
+                <td class="total"><strong>166.264.594</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
