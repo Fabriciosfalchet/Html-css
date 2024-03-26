@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cross.ico" type="image/x-icon">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusuario">Usúario: </label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="15" placeholder="nome do usuario" autocomplete="username"> <!--Tag required dentro de input, para que seja obrigatório preenchimento--> <!--Tag minlenght quer dizer minimo de caracteres, tag maxlenght quer dizer máximo de caracteres--> <!--tag PlaceHolder quer dizer dica-->
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required size="8" autocomplete="current-password"> <!--Tag required dentro de input, para que seja obrigatório preenchimento--> <!--tag size quer dizer tamanho da caixa de texto, e o número atribuido a ele é o exato espaço de caracteres.-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar"> 
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
