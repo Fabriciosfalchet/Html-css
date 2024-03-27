@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cross.ico" type="image/x-icon">
+    <title>Exemplo Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+        <legend>Sexo</legend>
+
+        <label for="imas"><input type="radio" name="sexo" id="imas" value="M">Masculino</label> <br>
+        <label for="ifem"><input type="radio" name="sexo" id="ifem" value="F">Feminino</label>
+    </fieldset>
+    <!--Para grupos que só deve assinalar uma alternativa,use input type radio, porém, o name deve ser o mesmo em todas alternativas, para que quando marcar um, desmarcar o outro, como deve ser. O id continua diferente.-->
+    
+    
+    
+    <fieldset>
+        <legend>Esportes Favoritos</legend>
+        
+        <label for="ifutebol"><input type="checkbox" name="futebol" id="ifutebol" checked>Futebol</label> <br>
+        <label for="ibasquete"><input type="checkbox" name="basquete" id="ibasquete">Basquete <br></label>
+        <label for="inatacao"><input type="checkbox" name="natacao" id="inatacao">Natação <br></label>
+        <label for="itenis"><input type="checkbox" name="tenis" id="itenis">Tênis</label>
+        <!--Input type: checkbox - Caixa para assinalar, com marque e desmarque-->
+        <!--tag Checked - Alternativa ja vir assinalada. útil quando for alguma autorização que precisa.-->
+    </fieldset>
+    
+    
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="submit" value="Limpar">
+    </p>
+    
+    </form>
+</body>
+</html>
